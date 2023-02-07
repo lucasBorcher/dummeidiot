@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Under Construction</title>
+  </head>
+  <body>
+    <h1>Under Construction</h1>
+    <div class="loading">
+      <img src="https://loading.io/spinners/ellipsis/lg.discuss-ellipsis-preloader.gif" alt="Loading..." />
+    </div>
+    <script type="text/javascript">
+      console.log("This website is under construction");
+    </script>
+  </body>
+</html>
