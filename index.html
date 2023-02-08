@@ -24,18 +24,6 @@
       #message-2 {
         font-size: 24px;
       }
-      #video-container {
-        position: relative;
-        width: 560px;
-        height: 315px;
-      }
-      #video {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-      }
       #button {
         font-size: 36px;
         background-color: red;
@@ -49,20 +37,28 @@
       #button:hover {
         background-color: #ff3333;
       }
+     .video-background { 
+       background: url(yourvideo.mp4) no-repeat;
+       background-size: cover;
+       position: absolute;
+       top: 0; right: 0; bottom: 0; left: 0;
+       z-index: -1;
+     }
     </style>
   </head>
   <body>
     <div id="container">
-      <div id="video-container">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/PbnXf5n7GTs?start=6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-      </div>
       <div id="button">Press Me</div>
       <div id="message-container">
         <div id="message-1" class="message">DUMME IDIOT</div>
         <div id="message-2" class="message">JEG HAR DIN IP</div>
       </div>
     </div>
-
+    <div class="video-background">
+      <video autoplay loop muted>
+      <source src="yourvideo.mp4" type="video/mp4">
+      </video>
+    </div>
     <script>
       const button = document.querySelector("#button");
       const messageContainer = document.querySelector("#message-container");
