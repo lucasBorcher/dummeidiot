@@ -15,31 +15,36 @@
         flex-direction: column;
       }
       .message {
-        font-size: 106px;
+        font-size: 36px;
         color: red;
         text-transform: uppercase;
         margin-top: 20px;
         position: relative;
       }
       #message-2 {
-        font-size: 48px;
+        font-size: 24px;
       }
-      #gif {
+      #video-container {
+        position: relative;
+        width: 560px;
+        height: 315px;
+      }
+      #video {
         position: absolute;
         top: 0;
         left: 0;
-        right: 0;
-        bottom: 0;
-        margin: auto;
+        width: 100%;
+        height: 100%;
       }
       #button {
-        font-size: 72px;
+        font-size: 36px;
         background-color: red;
         color: white;
         padding: 20px 40px;
         text-align: center;
         border-radius: 50px;
         cursor: pointer;
+        margin-top: 20px;
       }
       #button:hover {
         background-color: #ff3333;
@@ -48,12 +53,12 @@
   </head>
   <body>
     <div id="container">
+      <div id="video-container">
+        <iframe id="video" src="https://www.youtube.com/embed/your-video-id-here" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
       <div id="button">Press Me</div>
       <div id="message-container">
-        <div id="message-1" class="message">
-          <img id="gif" src="https://www.youtube.com/watch?v=PbnXf5n7GTs&t=19s" alt="Animated GIF">
-          DUMME IDIOT
-        </div>
+        <div id="message-1" class="message">DUMME IDIOT</div>
         <div id="message-2" class="message">JEG HAR DIN IP</div>
       </div>
     </div>
