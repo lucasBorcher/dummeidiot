@@ -15,16 +15,25 @@
         flex-direction: column;
       }
       .message {
-        font-size: 92px;
+        font-size: 106px;
         color: red;
         text-transform: uppercase;
         margin-top: 20px;
+        position: relative;
       }
       #message-2 {
         font-size: 48px;
       }
+      #gif {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+      }
       #button {
-        font-size: 48px;
+        font-size: 72px;
         background-color: red;
         color: white;
         padding: 20px 40px;
@@ -41,8 +50,11 @@
     <div id="container">
       <div id="button">Press Me</div>
       <div id="message-container">
-        <div id="message-1" class="message">DUMME IDIOT</div>
-        <div id="message-2" class="message">Jeg har din ip</div>
+        <div id="message-1" class="message">
+          <img id="gif" src="https://www.youtube.com/watch?v=PbnXf5n7GTs&t=19s" alt="Animated GIF">
+          DUMME IDIOT
+        </div>
+        <div id="message-2" class="message">JEG HAR DIN IP</div>
       </div>
     </div>
 
