@@ -2,11 +2,19 @@
 <html>
   <head>
     <style>
+      #container {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
       #message {
         display: none;
         font-size: 36px;
         color: red;
         text-align: center;
+        text-transform: uppercase;
       }
       #button {
         font-size: 36px;
@@ -18,8 +26,10 @@
     </style>
   </head>
   <body>
-    <div id="button">Press Me</div>
-    <div id="message">dumme idiot</div>
+    <div id="container">
+      <div id="button">Press Me</div>
+      <div id="message">DUMME IDIOT</div>
+    </div>
 
     <script>
       const button = document.querySelector("#button");
