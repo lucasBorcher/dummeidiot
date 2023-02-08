@@ -16,6 +16,12 @@
         text-align: center;
         text-transform: uppercase;
       }
+      #message1 {
+        display: none;
+        font-size: 48px;
+        color: red;
+        text-align: center;
+      }
       #button {
         font-size: 72px;
         background-color: red;
@@ -34,11 +40,13 @@
     <div id="container">
       <div id="button">Press Me</div>
       <div id="message">DUMME IDIOT</div>
+      <div id="message1">Jeg har din ip</div>
     </div>
 
     <script>
       const button = document.querySelector("#button");
       const message = document.querySelector("#message");
+      const message = document.querySelector("#message1");
       button.addEventListener("click", function () {
         button.style.display = "none";
         message.style.display = "block";
