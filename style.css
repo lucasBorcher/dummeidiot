@@ -7,9 +7,9 @@
 }
 
 .arrow-head {
+  border-top: 25px solid red;
   border-left: 50px solid transparent;
   border-right: 50px solid transparent;
-  border-bottom: 50px solid red;
   height: 0;
   width: 0;
 }
@@ -17,5 +17,5 @@
 .arrow-body {
   border-top: 50px solid red;
   height: 0;
-  width: 100px;
+  width: 50px;
 }
