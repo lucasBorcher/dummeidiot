@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="dk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Du er en dum idiot." />
+    <meta name="keywords" content="dumme idiot, dum, idiot" />
+    <title>Dumme idiot</title>
+
+    <style>
+      #buttoncontainer {
+        display: flex;
+        background-color: red;
+        width: 300px;
+        height: 100px;
+        border-radius: 50px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+      }
+      #buttonmessage {
+        color: whitesmoke;
+        font-weight: bold;
+        font-size: 48px;
+      }
+      #messagecontainer {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        align-items: center;
+        justify-content: center;
+      }
+      #message1 {
+        color: red;
+        font-weight: bold;
+        font-size: 72px;
+        margin-bottom: 16px;
+      }
+      #message2 {
+        font-size: 48px;
+        color: red;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="buttoncontainer">
+      <div id="buttonmessage">Press Me!</div>
+    </div>
+    <div id="messagecontainer">
+      <div id="message1">DUMME IDIOT</div>
+      <div id="message2">JEG HAR DIN IP!</div>
+    </div>
+
+    <script src="../JavaScript/Knap.js"></script>
+  </body>
+</html>
