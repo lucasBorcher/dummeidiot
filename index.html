@@ -27,6 +27,10 @@
         color: whitesmoke;
         font-weight: bold;
         font-size: 48px;
+        onmousehover
+      }
+      #buttonmessage:hover{
+        filter: brightness(0.925);
       }
       #messagecontainer {
         display: none;
@@ -49,11 +53,25 @@
         color: red;
         font-weight: bold;
       }
+
+      #hemcontainer {
+        display: flex;
+        background-color: whitesmoke;
+        width: 3px;
+        height: 3px;
+        position: absolute;
+        top: 150px;
+        left: 400px;
+        cursor: pointer;
+      }
     </style>
   </head>
   <body>
     <div id="buttoncontainer">
       <div id="buttonmessage">Press Me!</div>
+      <a href="HTML/Junk.html">
+        <div id="hemcontainer"></div>
+      </a>
     </div>
     <div id="messagecontainer">
       <div id="message1">DUMME IDIOT</div>
